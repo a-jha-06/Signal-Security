@@ -27,6 +27,14 @@
 .App-link {
   color: #61dafb;
 }
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #121212, #0d2b3c, #121212); /* Replace with your gradient */
+  color: white; /* Ensure text is visible on dark backgrounds */
+  font-family: Arial, sans-serif;
+}
 
 @keyframes App-logo-spin {
   from {

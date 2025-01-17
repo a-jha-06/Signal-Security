@@ -1,0 +1,91 @@
+/* General styles for the hero banner */
+.hero-banner {
+  position: relative;
+  height: 85vh; /* Full viewport height */
+  background-image: url('../../images/hero-image.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+.hero-content {
+  text-align: right;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 15px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .hero-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.5rem;
+  }
+
+  .hero-button {
+    padding: 7px 12px;
+    font-size: 0.75rem;
+  
+  }
+  .hero-banner {
+  height: 20vh; /* Full viewport height */
+  }
+}
