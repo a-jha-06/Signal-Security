@@ -1,14 +1,13 @@
 /* Gradient Background for the Section */
 .sliding-feature-cards {
-  background: linear-gradient(90deg, #1b1b1b, #3a3a3a, #1b1b1b);
-  color: #ffffff;
+ 
   padding: 40px 20px;
   text-align: center;
 }
 
 /* Title Styling */
 .services-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 10px;
@@ -19,7 +18,7 @@
 }
 
 .services-subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #dddddd;
   margin-bottom: 30px;
 }
@@ -36,6 +35,7 @@
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 315px;
 }
 
 .service-card:hover {
@@ -54,12 +54,14 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #ffffff;
+  height: 45px;;
 }
 
 .service-description {
   font-size: 1rem;
   color: #bbbbbb;
   margin-bottom: 15px;
+  height: 100px;;
 }
 
 /* Know More Button */
@@ -90,4 +92,26 @@
 .swiper-pagination .custom-arrow:hover {
   color: #ff0000;
   transition: color 0.3s ease;
+}
+.swiper-wrapper{
+  padding-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+ .service-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  height: 45px;;
+}
+}
+@media (max-width: 768px) {
+  .service-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  height: 45px;;
+}
 }

@@ -1,0 +1,30 @@
+
+
+.main-image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: auto;
+  padding: 25px;
+  margin-top: -210px;
+}
+
+@media (max-width: 480px) {
+  .main-image{
+   
+ width: 90%;
+  height: auto;
+  margin-top: -15px;
+   
+}
+}
+@media (max-width: 768px) {
+  .main-image{
+   
+ width: 90%;
+  height: auto;
+margin-top: -15px;
+  padding: 5px;
+}
+}

@@ -46,7 +46,7 @@ const features = [
 
 const SlidingFeatureCards = () => {
   return (
-    <div className="sliding-feature-cards">
+    <div className="sliding-feature-cards" id="services">
       <h2 className="services-title">
         Take A Look At <span className="highlight">Services We Provide</span>
       </h2>
@@ -59,15 +59,15 @@ const SlidingFeatureCards = () => {
         slidesPerView={4}
         pagination={{
           clickable: true,
-          renderBullet: (index, className) => {
-            if (index === 0) {
-              return `<span class="${className} custom-arrow">←</span>`;
-            }
-            if (index === features.length - 4) {
-              return `<span class="${className} custom-arrow">→</span>`;
-            }
-            return `<span class="${className}"></span>`;
-          },
+          // renderBullet: (index, className) => {
+          //   if (index === 0) {
+          //     return `<span class="${className} custom-arrow">←</span>`;
+          //   }
+          //   if (index === features.length - 4) {
+          //     return `<span class="${className} custom-arrow">→</span>`;
+          //   }
+          //   return `<span class="${className}"></span>`;
+          // },
         }}
         breakpoints={{
           320: { slidesPerView: 1 },

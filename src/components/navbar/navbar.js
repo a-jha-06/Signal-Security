@@ -13,15 +13,15 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src={logo} alt="Logo" className="logo-image" />
+               <a href='/'> <img src={logo} alt="Logo" className="logo-image" /></a>
             </div>
             <ul className={`nav-links ${isMobile ? "active" : ""}`}>
                 <li><a href="/">Home</a></li>
-                <li><a href="/services">Our Services</a></li>
+                <li><a href="#services">Our Services</a></li>
 
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-                <li><a href="/contact">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#contact">Gallery</a></li>
             </ul>
             <div className="hamburger" onClick={toggleMenu}>
                 ☰

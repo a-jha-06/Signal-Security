@@ -1,0 +1,108 @@
+.who-we-are-container {
+  display: grid;
+  flex-direction: row;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.who-we-are-content {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.who-we-are-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: red;
+}
+
+.who-we-are-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+ .who-we-are-paragraph2{
+      font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  width: 50%;
+  }
+.who-we-are-button {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
+
+.who-we-are-button:hover {
+  background-color: #ff4d4d;
+}
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .who-we-are-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .who-we-are-content {
+    max-width: 100%;
+    text-align: center;
+   
+  }
+
+  .who-we-are-heading {
+    font-size: 1.5rem;
+  }
+
+  .who-we-are-paragraph {
+    font-size: 0.9rem;
+  }
+ .who-we-are-paragraph2{
+     font-size: 0.9rem;
+      width: 100%;
+  }
+
+  .who-we-are-button {
+    font-size: 0.8rem;
+    padding-left: 50px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .who-we-are-heading {
+    font-size: 1.2rem;
+  }
+
+  .who-we-are-paragraph {
+    font-size: 0.8rem;
+  }
+  .who-we-are-paragraph2{
+     font-size: 0.8rem;
+      width: 100%;
+  }
+
+  .who-we-are-button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}
