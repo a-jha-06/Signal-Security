@@ -48,41 +48,32 @@ const SlidingFeatureCards = () => {
   return (
     <div className="sliding-feature-cards" id="services">
       <h2 className="services-title">
-        Take A Look At <span className="highlight">Services We Provide</span>
+        We offer <span className="highlight">specialized expertise </span> 
+in the following areas to 
+meet your unique security needs
       </h2>
-      <p className="services-subtitle">
-        Specialized in the field of the following services
-      </p>
       <Swiper
-        modules={[Pagination]}
-        spaceBetween={20}
-        slidesPerView={4}
-        pagination={{
-          clickable: true,
-          // renderBullet: (index, className) => {
-          //   if (index === 0) {
-          //     return `<span class="${className} custom-arrow">←</span>`;
-          //   }
-          //   if (index === features.length - 4) {
-          //     return `<span class="${className} custom-arrow">→</span>`;
-          //   }
-          //   return `<span class="${className}"></span>`;
-          // },
-        }}
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 },
-        }}
-        className="swiper-container"
-      >
+  modules={[Pagination]}
+  spaceBetween={20}
+  slidesPerView={4}
+  pagination={{ clickable: true }}
+  grabCursor={true} // allows dragging
+  freeMode={true}   // makes it smoothly scrollable
+  breakpoints={{
+    320: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 4 },
+  }}
+  className="swiper-container"
+>
+
         {features.map((feature, index) => (
           <SwiperSlide key={index} className="swiper-slide">
             <div className="service-card">
               <div className="service-icon">{feature.icon}</div>
               <h3 className="service-title">{feature.title}</h3>
               <p className="service-description">{feature.description}</p>
-              <button className="know-more-button">Know More</button>
+              
             </div>
           </SwiperSlide>
         ))}

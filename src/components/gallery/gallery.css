@@ -1,0 +1,96 @@
+.gallery-container {
+  padding: 60px 20px;
+  text-align: center;
+  /* background: linear-gradient(180deg, #f9f9f9, #ffffff); */
+}
+
+.gallery-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #071b34;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #ff4081;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Grid layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Image cards */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Hover effects */
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Overlay */
+.gallery-item::after {
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(11, 87, 208, 0.8);
+  color: #fff;
+  padding: 8px 0;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* 📱 Responsive tweaks */
+@media (max-width: 768px) {
+  .gallery-title {
+    font-size: 24px;
+  }
+
+  .gallery-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

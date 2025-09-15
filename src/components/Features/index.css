@@ -1,7 +1,7 @@
 /* Gradient Background for the Section */
 .sliding-feature-cards {
  
-  padding: 40px 20px;
+  padding: 5px 20px;
   text-align: center;
 }
 
@@ -9,7 +9,7 @@
 .services-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff;
+  /* color: #ffffff; */
   margin-bottom: 10px;
 }
 
@@ -30,12 +30,12 @@
 
 /* Service Card Styling */
 .service-card {
-  background: #252525;
+  background: #0a1d36;
   border-radius: 10px;
-  padding: 20px;
+  padding: 18px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 315px;
+  height: 250px;
 }
 
 .service-card:hover {
